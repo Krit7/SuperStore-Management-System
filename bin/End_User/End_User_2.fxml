@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="End_User.End_User_2_Controller">
+	<children>
+		<Label layoutX="14.0" layoutY="14.0" text="You are a Guest User">
+			<font>
+				<Font name="System Italic" size="16.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="50.0" prefHeight="42.0" prefWidth="217.0" text="Select item to proceed">
+			<font>
+				<Font name="System Bold" size="20.0" />
+			</font>
+		</Label>
+		<ListView fx:id="Search_ResultsP" layoutX="19.0" layoutY="117.0" prefHeight="222.0" prefWidth="175.0" />
+		<Button fx:id="ok" layoutX="260.0" layoutY="344.0" mnemonicParsing="false" onAction="#next_window" prefHeight="42.0" prefWidth="74.0" text="OK" />
+      <ListView fx:id="Search_ResultsC" layoutX="205.0" layoutY="117.0" prefHeight="222.0" prefWidth="183.0" />
+      <Label layoutX="78.0" layoutY="92.0" text="Products" />
+      <Label layoutX="286.0" layoutY="92.0" prefHeight="17.0" prefWidth="55.0" text="Category" />
+      <Button fx:id="Add_cart" layoutX="102.0" layoutY="344.0" mnemonicParsing="false" onAction="#Add_cart" prefHeight="42.0" prefWidth="93.0" text="Add to cart" />
+      <Label layoutX="19.0" layoutY="344.0" text="Enter Quantity" />
+      <TextField fx:id="quan" layoutX="19.0" layoutY="361.0" prefHeight="25.0" prefWidth="77.0" />
+      <Button fx:id="logout" layoutX="325.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+	</children>
+	<effect>
+		<SepiaTone />
+	</effect>
+</AnchorPane>

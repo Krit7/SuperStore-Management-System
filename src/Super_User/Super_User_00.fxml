@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Super_User.Super_User_00_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="You are a Super User">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="warehouses" layoutX="205.0" layoutY="113.0" prefHeight="273.0" prefWidth="181.0" />
+      <ListView fx:id="stores" layoutX="14.0" layoutY="113.0" prefHeight="273.0" prefWidth="187.0" />
+      <Label layoutX="67.0" layoutY="96.0" text="Registered stores" />
+      <Label layoutX="233.0" layoutY="96.0" text="Registered Warehouses" />
+   </children>
+   <effect>
+      <Blend mode="EXCLUSION" />
+   </effect>
+</AnchorPane>

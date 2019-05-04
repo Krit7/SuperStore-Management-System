@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Store_Admin.Store_Admin_1_1_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="You are a Store Admin">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="49.0" prefHeight="56.0" prefWidth="342.0" text="Select a product from Warehouse">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="32.0" layoutY="333.0" prefHeight="39.0" prefWidth="336.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="167.33331298828125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.66668701171875" minWidth="10.0" prefWidth="168.66668701171875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#prev_window" prefHeight="25.0" prefWidth="161.0" text="Back" />
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#next_window" prefHeight="25.0" prefWidth="167.0" text="OK" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <ListView fx:id="list" layoutX="32.0" layoutY="100.0" prefHeight="225.0" prefWidth="327.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Store_Admin.Store_Admin_4_Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="You are a Store Admin">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="47.0" prefHeight="56.0" prefWidth="376.0" text="Manage cost/demand">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="32.0" layoutY="116.0" prefHeight="256.0" prefWidth="336.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="33.0" prefWidth="162.0" text="Enter updated cost(D)" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="37.0" prefHeight="33.0" prefWidth="162.0" text="Enter updated demand(K)" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#prev_window" prefHeight="25.0" prefWidth="161.0" text="Back" GridPane.rowIndex="3" />
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#next_window" prefHeight="25.0" prefWidth="167.0" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="cost" onAction="#get_cost" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="demand" layoutX="178.0" layoutY="41.0" onAction="#get_demand" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="10.0" layoutY="90.0" prefHeight="33.0" prefWidth="162.0" text="Enter Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="178.0" layoutY="94.0" onAction="#get_cost" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+   <effect>
+      <InnerShadow choke="1.0" height="30.0" radius="14.5" width="30.0" />
+   </effect>
+</AnchorPane>
